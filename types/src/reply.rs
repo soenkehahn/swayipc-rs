@@ -21,7 +21,6 @@ pub struct CommandError {
     pub message: String,
 }
 
-#[non_exhaustive]
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Workspace {
     pub id: i64,
@@ -233,7 +232,6 @@ pub struct Seat {
     pub devices: Vec<Input>,
 }
 
-#[non_exhaustive]
 #[derive(Clone, Copy, Debug, PartialEq, Deserialize, Serialize)]
 pub struct Rect {
     pub x: i32,
@@ -313,7 +311,6 @@ pub enum NodeLayout {
     None,
 }
 
-#[non_exhaustive]
 #[derive(Clone, Debug, PartialEq, Deserialize, Serialize)]
 pub struct Node {
     /// The internal unique ID for this node.
